@@ -1,7 +1,15 @@
 # MCE-14-CONTROL
 How to use Timer Interrupt For motor control; nakub
-ROBOT/Sytemrobot/Sytemrobot.ino
 
-ROBOT/TESTROBOTWAB/TESTROBOTWAB.ino
+ไฟล์ ROBOT ประกอบไปด้วย 3 ไฟล์
 
-ROBOT/Tuning PID/Tuning PID.ino
+1. ROBOT/Sytemrobot/Sytemrobot.ino คือ ไฟล์ที่เป็นระบบรวมการทำงานของหุ่นทั้งหมด
+   โดยมีลำดับขั้นตอนการรัน
+   1.1 หลัง Boot หุ่นจะเข้าถึงการรอความพร้อมจากกล้อง เพื่อทำการปรับ HOME
+     มีรายละเอียดย่อยคือ
+   หุ่นจะทำการรอ READY จากกล้องก่อนช่วงเวลานึง ถ้าหมดแล้วหุ่นจะข้ามไปทำการปรับ HOME เองทันที่ (กรณีเพื่อกันหุ่น Re boot)
+   1.2 หลังการปรับ HOME หุ่นจะเข้าสู่การรอรับค่าโดยมี ไฟ สีเหลืองแสดง
+
+2. ROBOT/TESTROBOTWAB/TESTROBOTWAB.ino คือ ไฟล์ที่เป็นการทดสอบการเคลื่อนที่ของหุ่น โดยใช้มือเราเป็นคนใส่พิกัด X,Y และกดปุ่ม ไป และ กลับ ด้วยตัวเอง
+
+3. ROBOT/Tuning PID/Tuning PID.ino คือ
