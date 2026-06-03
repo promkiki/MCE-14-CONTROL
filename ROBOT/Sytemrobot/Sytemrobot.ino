@@ -28,7 +28,7 @@ MPU6050 mpu;
 // CONFIG — WiFi
 // ════════════════════════════════════
 const char* WIFI_SSID = "MCE14";
-const char* WIFI_PASS = "12345678";
+const char* WIFI_PASS = "......";Password
 const uint16_t UDP_PORT  = 12345;
 
 IPAddress PC_IP(192, 168, 137, 1);
