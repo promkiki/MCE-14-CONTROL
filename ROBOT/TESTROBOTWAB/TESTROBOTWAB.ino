@@ -23,8 +23,8 @@ MPU6050 mpu;
 // ════════════════════════════════════
 // CONFIG
 // ════════════════════════════════════
-const char* WIFI_SSID = "vivo T1x";
-const char* WIFI_PASS = "promkub ";
+const char* WIFI_SSID = "....."; ชื่อ wifi or your name wifi
+const char* WIFI_PASS = "....."; Password your wifi
 
 WebServer        httpServer(80);
 WebSocketsServer wsServer(81);
